@@ -1,0 +1,24 @@
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<div align="center">
+    <h2>Fill in to add movie</h2>
+</div>
+<br>
+<div align="center">
+  
+   Movie ID &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="movieId" required [(ngModel)]="movie.movieId"class="form-group"/><br>
+   Movie Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="movieName" [(ngModel)]="movie.movieName"class="form-group"/><br>
+   Movie Genre &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="movieGenre" [(ngModel)]="movie.movieGenre"class="form-group"/><br>
+   Movie Director &nbsp;&nbsp;&nbsp;<input type="text" name="movieDirector" [(ngModel)]="movie.movieDirector"class="form-group"/><br>
+   Movie Length &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="movieLength" [(ngModel)]="movie.movieLength"class="form-group"/><br>
+   Languages &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="lanuages"[(ngModel)]="movie.languages"class="form-group"/><br>
+   Release Date &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" name="movieReleaseDate" [(ngModel)]="movie.movieReleaseDate"class="form-group"/><br>
+
+   <input type="button" value="Add Movie" (click)="addMovie()" class="btn btn-success"/>
+</div> 
+<br>
+<div>
+    <h2 align="center">{{ message }}</h2>
+</div>
+

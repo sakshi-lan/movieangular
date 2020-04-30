@@ -3,16 +3,25 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AddMovieComponent } from './add-movie/add-movie.component';
+
+import { FormsModule} from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { MovieServiceService } from './movie-service.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AddMovieComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
+
   ],
-  providers: [],
+  providers: [HttpClientModule, MovieServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
